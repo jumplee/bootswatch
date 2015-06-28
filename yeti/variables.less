@@ -17,7 +17,7 @@
 @brand-primary:         #008cba;
 @brand-success:         #43ac6a;
 @brand-info:            #5bc0de;
-@brand-warning:         #E99002;
+@brand-warning:         #FCF8E3;
 @brand-danger:          #F04124;
 
 
@@ -357,7 +357,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    45px;
+@navbar-height:                    80px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -371,9 +371,9 @@
 // Navbar links
 @navbar-default-link-color:                #fff;
 @navbar-default-link-hover-color:          #fff;
-@navbar-default-link-hover-bg:             #272727;
+@navbar-default-link-hover-bg:             #008CBA;
 @navbar-default-link-active-color:         #fff;
-@navbar-default-link-active-bg:            #272727;
+@navbar-default-link-active-bg:            #008CBA;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -633,7 +633,7 @@
 @alert-info-border:           @state-info-border;
 
 @alert-warning-bg:            @brand-warning;
-@alert-warning-text:          #fff;
+@alert-warning-text:          darken(@brand-warning, 70%) ;
 @alert-warning-border:        @state-warning-border;
 
 @alert-danger-bg:             @brand-danger;
@@ -790,13 +790,13 @@
 @breadcrumb-padding-vertical:   8px;
 @breadcrumb-padding-horizontal: 15px;
 //** Breadcrumb background color
-@breadcrumb-bg:                 #f5f5f5;
+@breadcrumb-bg:                 none;
 //** Breadcrumb text color
 @breadcrumb-color:              @gray-light;
 //** Text color of current page in the breadcrumb
 @breadcrumb-active-color:       @gray-dark;
 //** Textual separator for between breadcrumb elements
-@breadcrumb-separator:          "/";
+@breadcrumb-separator:          ">";
 
 
 //== Carousel
